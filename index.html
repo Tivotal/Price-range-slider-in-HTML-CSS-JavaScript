@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Tivotal-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Range Bar - Tivotal</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2>Price Range</h2>
+        <p>Enter or Select min and max price</p>
+      </header>
+      <div class="price-input">
+        <div class="field">
+          <span>Min</span>
+          <input type="number" value="300" class="min-input" />
+        </div>
+        <div class="seperator">-</div>
+        <div class="field">
+          <span>Max</span>
+          <input type="number" value="3500" class="max-input" />
+        </div>
+      </div>
+      <div class="slider">
+        <div class="progress"></div>
+      </div>
+      <div class="range-input">
+        <input type="range" min="0" max="10000" value="300" class="min-range" />
+        <input
+          type="range"
+          min="0"
+          max="10000"
+          value="3500"
+          class="max-range"
+        />
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
